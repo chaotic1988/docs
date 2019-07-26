@@ -41,7 +41,9 @@
 
 ## 4 Enums
 
-### 4.1 Event 
+### 4.1 Event Type
+|Field|Type|Description|
+|---|---|---|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIzNTYyOTQyLC0xMjU1OTcwNTkwXX0=
+eyJoaXN0b3J5IjpbMjE3MjcwMTkxLC0xMjU1OTcwNTkwXX0=
 -->
