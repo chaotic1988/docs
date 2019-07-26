@@ -11,7 +11,7 @@ Internally, XTrade5 uses intergers to identify securities, instead of tickers li
 ### 1.3 Message
 
 ### 1.4 Order ID
-The (``account_id``, ``strategy_id``, 
+The (``account_id``, ``strategy_id``, ``order_id``) tuple uniquely identifies an order. Usually, a client will be assigned a fixed ``account_id
 
 
 ## 2 Streams
@@ -99,6 +99,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMxMjk2NzQ5LC0zMjQyMjQ4OTgsLTg4Nz
-gwMzAzNSwyMTcyNzAxOTEsLTEyNTU5NzA1OTBdfQ==
+eyJoaXN0b3J5IjpbLTE3MTc2NDI1MzcsLTMyNDIyNDg5OCwtOD
+g3ODAzMDM1LDIxNzI3MDE5MSwtMTI1NTk3MDU5MF19
 -->
