@@ -86,7 +86,7 @@ enum OrderAction {
 
 ### 4.3 Order Update Type
 ```c
-enum OrderAction {
+enum OrderUpdateType {
 	ACCEPT = 0,
 	REJECT = 1,
 	FILL = 2,
@@ -134,5 +134,5 @@ Examples:
 - {"account_id": 0, "strategy_id": 0, "order_id": 5, "sid": 908, "action": 0, "quantity": 1000, "price": 11.43, "update_type": 2, "filled": 300, "remaining": 700, "filled_value": 3429.0, "commission": 0, "error": 0}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5OTc2Nzg3Ml19
+eyJoaXN0b3J5IjpbMTU2NjQ1MDIyNywtNzk5NzY3ODcyXX0=
 -->
