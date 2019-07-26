@@ -8,7 +8,10 @@ XTrade5 uses *Redis Stream* as communication middleware. Unlike common fire-and-
 ### 1.2 Security ID
 Internally, XTrade5 uses intergers to identify securities, instead of tickers like 000001.
 
-### 1.3
+### 1.3 Message
+
+### 1.4 Order ID
+The (``account_id``, ``strategy_id``, 
 
 
 ## 2 Streams
@@ -96,6 +99,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNDIyNDg5OCwtODg3ODAzMDM1LDIxNz
-I3MDE5MSwtMTI1NTk3MDU5MF19
+eyJoaXN0b3J5IjpbNjMxMjk2NzQ5LC0zMjQyMjQ4OTgsLTg4Nz
+gwMzAzNSwyMTcyNzAxOTEsLTEyNTU5NzA1OTBdfQ==
 -->
