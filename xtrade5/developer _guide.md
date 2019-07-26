@@ -12,7 +12,7 @@ Internally, XTrade5 uses intergers to identify securities for both market data f
 
 The advantages of using integer ``sid`` are:
 1. Different market data providers and brokers may use different tickers for the same security. For example, some may add suffixes like .SH and .SZ to differentiate securities traded at different exchanges, while others don't. Using a unified integer security ID scheme can simplify programming. 
-2. Because `sid`'s are in a contiguous integer range from 0, data structures like fix-sized arrays can be emp
+2. Because `sid`'s are in a contiguous integer range from 0, data structures like fix-sized arrays, instead of hash tables, can be employed to maintain sid-wise information, which  enables optimizations for performance.
 
 
 ### 1.3 Message
@@ -106,6 +106,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjE0Mzk0NjQsLTMyNDIyNDg5OCwtOD
-g3ODAzMDM1LDIxNzI3MDE5MSwtMTI1NTk3MDU5MF19
+eyJoaXN0b3J5IjpbLTEzMTg2NTU1NiwtMzI0MjI0ODk4LC04OD
+c4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcwNTkwXX0=
 -->
