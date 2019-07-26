@@ -17,7 +17,7 @@ XTrade5 uses Redis as middleware. In particular, request and response messages
 |strategy_id|Integer|Strategy ID|
 |order_id|Integer|Order ID|
 |sid|Integer|Security ID|
-|action|Integer|Buy/Sell|
+|action|Integer|Order action (see Section 4.2)|
 |quantity|Integer|Quantity|
 |price|Float|Limit price|
 
@@ -35,10 +35,10 @@ XTrade5 uses Redis as middleware. In particular, request and response messages
 |strategy_id|Integer|Strategy ID|
 |order_id|Integer|Order ID|
 |sid|Integer|Security ID|
-|action|Integer|Buy/Sell|
+|action|Integer|Order Action (see Section 4.2)|
 |quantity|Integer|Quantity|
 |price|Float|Limit price|
-|update_type|Integer|Order Update Type|
+|update_type|Integer|Order Update Type (see Section 4.3)|
 |filled|Integer|Filled quantity|
 |remaining|Integer|Remaining quantity|
 |filled_value|Float|Filled value|
@@ -65,7 +65,7 @@ enum OrderAction {
 }; 
 ```
 
-### 4.2 Order Update Type
+### 4.3 Order Update Type
 ```c
 enum OrderAction {
 	ACCEPT = 0,
@@ -75,7 +75,7 @@ enum OrderAction {
 }; 
 ```
 
-### 4.2 Error Code
+### 4.4 Error Code
 ```c
 enum OrderError {
 	OK = 0,
@@ -88,6 +88,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU1MDQwNzg1LC04ODc4MDMwMzUsMjE3Mj
+eyJoaXN0b3J5IjpbNzc1Njg3NjY2LC04ODc4MDMwMzUsMjE3Mj
 cwMTkxLC0xMjU1OTcwNTkwXX0=
 -->
