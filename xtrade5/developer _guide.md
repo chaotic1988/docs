@@ -2,7 +2,9 @@
 
 ## 1 Overview
 
-### 1.1 
+### 1.1 Middleware
+XTrade5 Tra uses Redis as middle ware
+
 
 
 ## 3 Events
@@ -85,6 +87,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTcyOTA5MjgsMjE3MjcwMTkxLC0xMj
-U1OTcwNTkwXX0=
+eyJoaXN0b3J5IjpbNzM3MTQwOTUsMjE3MjcwMTkxLC0xMjU1OT
+cwNTkwXX0=
 -->
