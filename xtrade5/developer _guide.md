@@ -109,7 +109,7 @@ enum OrderError {
 
 ## 5 Message Specification
 
-A message consists of two fields: the message type field and the payload. The message type field is simply of an
+A message consists of two fields: the message type field and the payload. The message type field is simply an EventType enum(See Section 4.1). The message payload can be one of the three event types: Or
 
 Examples:
 1. Order entry
@@ -120,7 +120,7 @@ Examples:
 - {"", "sid":}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MjQyMDU0NSwtMTMxODY1NTU2LC0zMj
+eyJoaXN0b3J5IjpbMTQ0OTIzNTA0NiwtMTMxODY1NTU2LC0zMj
 QyMjQ4OTgsLTg4NzgwMzAzNSwyMTcyNzAxOTEsLTEyNTU5NzA1
 OTBdfQ==
 -->
