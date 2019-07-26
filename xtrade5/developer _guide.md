@@ -6,12 +6,12 @@
 XTrade5 uses *Redis Stream* as communication middleware. Unlike common fire-and-forget queues, Redis streams persist messages, which enables multiple downstream readers to process the messages at the same time. XTrade5 Clients and Hubs exchanges information through multiple Redis streams which carry different types of information like order requests and order responses. See Chapter 2 for details.
 
 ### 1.2 Security ID
-Internally, XTrade5 uses intergers to identify securities, instead of tickers like 000001.
+Internally, XTrade5 uses intergers to identify securities, instead of tickers like 000001. To establish the mapping from tickers to internal ``sid``'s, securities are ordered by listed date
 
 ### 1.3 Message
 
 ### 1.4 Order ID
-The (``account_id``, ``strategy_id``, ``order_id``) tuple uniquely identifies an order. Usually, a client will be assigned a fixed ``account_id`` and ``strategy_id``, therefore it only needs to maintain a series of unique ``order_id``s.
+The (``account_id``, ``strategy_id``, ``order_id``) tuple uniquely identifies an order. Usually, a client will be assigned a fixed ``account_id`` and ``strategy_id``, therefore it only needs to maintain a series of unique ``order_id``'s.
 
 
 ## 2 Streams
@@ -99,6 +99,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjgxNDc0NTAsLTMyNDIyNDg5OCwtOD
-g3ODAzMDM1LDIxNzI3MDE5MSwtMTI1NTk3MDU5MF19
+eyJoaXN0b3J5IjpbMTQ0MDQyNTA5OCwtMzI0MjI0ODk4LC04OD
+c4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcwNTkwXX0=
 -->
