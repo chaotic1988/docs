@@ -11,7 +11,8 @@ XTrade5 Clients and Hubs exchanges information through multiple Redis streams wh
 Internally, XTrade5 uses intergers to identify securities for both market data feed and trading, instead of tickers like 000001. Tickers are mapped to a contiguous integer space starting from 0. To establish the mapping from tickers to internal ``sid``'s, securities are ordered by listed date, and are assigned a unique integer ``sid`` according the their relative positions. For example, 000005 is the first security listed in A-Share market, its ``sid`` is thus 0.
 
 The advantages of using integer ``sid`` are:
-1.
+1. Different market data providers and brokers may use different tickers for the same security. For example, some may  
+2. 
 
 
 ### 1.3 Message
@@ -105,6 +106,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTg0MTgwMzQsLTMyNDIyNDg5OCwtOD
-g3ODAzMDM1LDIxNzI3MDE5MSwtMTI1NTk3MDU5MF19
+eyJoaXN0b3J5IjpbLTkxOTA5MjIxMCwtMzI0MjI0ODk4LC04OD
+c4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcwNTkwXX0=
 -->
