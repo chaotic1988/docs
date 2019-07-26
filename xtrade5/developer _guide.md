@@ -16,7 +16,7 @@
 |sid|Integer|Security ID|
 |action|Integer|Buy/Sell|
 |quantity|Integer|Quantity|
-|price|Double|Limit price|
+|price|Float|Limit price|
 
 ### 3.3 Order Cancel
 |Field|Type|Description|
@@ -34,11 +34,13 @@
 |sid|Integer|Security ID|
 |action|Integer|Buy/Sell|
 |quantity|Integer|Quantity|
-|price|Double|Limit price|
+|price|Float|Limit price|
 |update_type|Integer|Order Update Type|
 |filled|Integer|Filled quantity|
 |remaining|Integer|Remaining quantity|
-|update_type|Integer|Order Update Type|
+|filled_value|Float|Filled value|
+|commission|Float|Commission|
+|error|Integer|Error code|
 
 
 ## 4 Enums
@@ -47,6 +49,6 @@
 |Field|Type|Description|
 |---|---|---|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2OTkzNTQxNiwyMTcyNzAxOTEsLTEyNT
-U5NzA1OTBdfQ==
+eyJoaXN0b3J5IjpbNjQ2MDQzNjE1LDIxNzI3MDE5MSwtMTI1NT
+k3MDU5MF19
 -->
