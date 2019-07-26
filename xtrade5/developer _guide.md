@@ -8,7 +8,7 @@ XTrade5 uses *Redis Stream* as communication middleware. Unlike common fire-and-
 XTrade5 Clients and Hubs exchanges information through multiple Redis streams which carry different types of information like order requests and order responses. See Chapter 2 for details.
 
 ### 1.2 Security ID
-Internally, XTrade5 uses intergers to identify securities, instead of tickers like 000001. To establish the mapping from tickers to internal ``sid``'s, securities are ordered by listed date, and are assigned a unique integer ``sid`` starting from 0. For example,
+Internally, XTrade5 uses intergers to identify securities, instead of tickers like 000001. To establish the mapping from tickers to internal ``sid``'s, securities are ordered by listed date, and are assigned a unique integer ``sid`` starting from 0. For example, 000005 is the first security listed in A
 
 ### 1.3 Message
 
@@ -101,6 +101,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDI1NTQ5MSwtMzI0MjI0ODk4LC04OD
-c4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcwNTkwXX0=
+eyJoaXN0b3J5IjpbLTE2ODIxNjkwNTYsLTMyNDIyNDg5OCwtOD
+g3ODAzMDM1LDIxNzI3MDE5MSwtMTI1NTk3MDU5MF19
 -->
