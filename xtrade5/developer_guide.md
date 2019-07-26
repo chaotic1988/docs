@@ -24,7 +24,7 @@ The (``account_id``, ``strategy_id``, ``order_id``) tuple uniquely identifies an
 
 ## 2 Streams
 
-For clients, there are mainly two streams under concern: ``hub_in`` and ``hub_out``. Order requests(order entry or cancel) should be sent to ``hub_in``. On the other hand, clients needs to poll ``hub_out`` for order responses(order updates) received from Hubs. Note that clients of different strategy ids share the same ``hub_out``, therefore, a normal client needs to filter by ``account_id`` and ``strategy_id`` to get its own order responses.
+For clients, there are mainly two streams under concern: ``hub_in`` and ``hub_out``. Order requests(order entry or cancel) should be sent to ``hub_in``. On the other hand, clients needs to poll ``hub_out`` for order responses(order updates) received from Hubs. Note that clients of different strategy ids share the same ``hub_out``, therefore, a normal client needs to filter incoming messages by ``account_id`` and ``strategy_id`` to get its own order responses.
 
 ## 3 Events
 
@@ -134,6 +134,6 @@ Examples:
 - {"account_id": 0, "strategy_id": 0, "order_id": 5, "sid": 908, "action": 0, "quantity": 1000, "price": 11.43, "update_type": 2, "filled": 300, "remaining": 700, "filled_value": 3429.0, "commission": 0, "error": 0}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODQ2NTE1OSwtNTU4NjU1OTM4LC03OT
-k3Njc4NzJdfQ==
+eyJoaXN0b3J5IjpbLTEzMjI2NDkwNTUsMTM0ODQ2NTE1OSwtNT
+U4NjU1OTM4LC03OTk3Njc4NzJdfQ==
 -->
