@@ -12,7 +12,7 @@ XTrade5 uses Redis Stream as communication middleware. *Clients* and *Hubs* exch
 
 ## 2 Streams
 
-For *Clients*, there are mainly two streams to concern: ``hub_in`` and ``hub_out``
+For clients, there are mainly two streams to concern: ``hub_in`` and ``hub_out``. To
 
 ## 3 Events
 
@@ -95,6 +95,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NjEyODI5MSwtODg3ODAzMDM1LDIxNz
+eyJoaXN0b3J5IjpbMTc2MzY0OTMwMCwtODg3ODAzMDM1LDIxNz
 I3MDE5MSwtMTI1NTk3MDU5MF19
 -->
