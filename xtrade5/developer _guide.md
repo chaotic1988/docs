@@ -16,6 +16,7 @@ The advantages of using integer ``sid`` are:
 
 
 ### 1.3 Message
+XTrade5 uses JSON to e
 
 ### 1.4 Order ID
 The (``account_id``, ``strategy_id``, ``order_id``) tuple uniquely identifies an order. Usually, a client will be assigned a fixed ``account_id`` and ``strategy_id``, therefore it only needs to maintain a series of unique ``order_id``'s.
@@ -23,7 +24,7 @@ The (``account_id``, ``strategy_id``, ``order_id``) tuple uniquely identifies an
 
 ## 2 Streams
 
-For clients, there are mainly two streams to concern: ``hub_in`` and ``hub_out``. Order requests(order entry or cancel) should be sent to ``hub_in``. On the other hand, clients needs to poll ``hub_out`` for order responses(order updates) received from Hubs. Note that clients of different strategy ids share the same ``hub_out``, therefore, a normal client needs to filter by ``account_id`` and ``strategy_id`` to get its own order responses.
+For clients, there are mainly two streams under concern: ``hub_in`` and ``hub_out``. Order requests(order entry or cancel) should be sent to ``hub_in``. On the other hand, clients needs to poll ``hub_out`` for order responses(order updates) received from Hubs. Note that clients of different strategy ids share the same ``hub_out``, therefore, a normal client needs to filter by ``account_id`` and ``strategy_id`` to get its own order responses.
 
 ## 3 Events
 
@@ -106,6 +107,7 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTg2NTU1NiwtMzI0MjI0ODk4LC04OD
-c4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcwNTkwXX0=
+eyJoaXN0b3J5IjpbODUyNTc1MDIsLTEzMTg2NTU1NiwtMzI0Mj
+I0ODk4LC04ODc4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcwNTkw
+XX0=
 -->
