@@ -3,7 +3,9 @@
 ## 1 Overview
 
 ### 1.1 Redis Stream
-XTrade5 uses *Redis Stream* as communication middleware. Unlike common fire-and-forget queues, Redis streams persist messages, which enables multiple downstream readers to process the messages at the same time. XTrade5 Clients and Hubs exchanges information through multiple Redis streams which carry different types of information like order requests and order responses. See Chapter 2 for details.
+XTrade5 uses *Redis Stream* as communication middleware. Unlike common fire-and-forget queues, Redis streams persist messages, which enables multiple downstream readers to process the messages at the same time.
+
+XTrade5 Clients and Hubs exchanges information through multiple Redis streams which carry different types of information like order requests and order responses. See Chapter 2 for details.
 
 ### 1.2 Security ID
 Internally, XTrade5 uses intergers to identify securities, instead of tickers like 000001. To establish the mapping from tickers to internal ``sid``'s, securities are ordered by listed date
@@ -16,7 +18,7 @@ The (``account_id``, ``strategy_id``, ``order_id``) tuple uniquely identifies an
 
 ## 2 Streams
 
-For clients, there are mainly two streams to concern: ``hub_in`` and ``hub_out``. Order requests(order entry or cancel) should be sent to ``hub_in``. On the other hand, clients needs to poll ``hub_out`` for order responses(order updates) received from Hubs. Note that clients of different strategy ids share the same ``hub_out``, therefore, a normal client should filter 
+For clients, there are mainly two streams to concern: ``hub_in`` and ``hub_out``. Order requests(order entry or cancel) should be sent to ``hub_in``. On the other hand, clients needs to poll ``hub_out`` for order responses(order updates) received from Hubs. Note that clients of different strategy ids share the same ``hub_out``, therefore, a normal client needs to filter by ``account_id`` and ``strategy_id`` to get its own order responses.
 
 ## 3 Events
 
@@ -99,6 +101,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcyMDUzNzAxLC0zMjQyMjQ4OTgsLTg4Nz
-gwMzAzNSwyMTcyNzAxOTEsLTEyNTU5NzA1OTBdfQ==
+eyJoaXN0b3J5IjpbMTQ1MDc4MDE2NywtMzI0MjI0ODk4LC04OD
+c4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcwNTkwXX0=
 -->
