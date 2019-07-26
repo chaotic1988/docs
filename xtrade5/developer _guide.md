@@ -109,9 +109,15 @@ enum OrderError {
 
 ## 5 Message Specification
 
-A message consists of two fields: the message type field and the
+A message consists of two fields: the message type field and the payload.
+
+Examples:
+1. Order entry
+```json
+{"type": 16, data: ""}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMjM1NTQ2NCwtMTMxODY1NTU2LC0zMj
-QyMjQ4OTgsLTg4NzgwMzAzNSwyMTcyNzAxOTEsLTEyNTU5NzA1
-OTBdfQ==
+eyJoaXN0b3J5IjpbLTE4MTgwMDM3ODUsLTEzMTg2NTU1NiwtMz
+I0MjI0ODk4LC04ODc4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcw
+NTkwXX0=
 -->
