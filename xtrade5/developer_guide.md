@@ -122,17 +122,17 @@ Examples:
 2. Order cancel
 ```
 - type
-- 16
+- 18
 - data
 - {"account_id": 0, "strategy_id": 0, "order_id": 5}
 ```
 3. Order update(order fill)
 ```
 - type
-- 16
+- 17
 - data
-- {"account_id": 0, "strategy_id": 0, "order_id": 5, "sid": 908, "action": 0, "quantity": 1000, "price": 11.43, "update_type": 2, "filled": 300, "remaining": 700, "filled_value": 3429.0, "commission": 0, "error"}
+- {"account_id": 0, "strategy_id": 0, "order_id": 5, "sid": 908, "action": 0, "quantity": 1000, "price": 11.43, "update_type": 2, "filled": 300, "remaining": 700, "filled_value": 3429.0, "commission": 0, "error": 0}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNzM1MzUyN119
+eyJoaXN0b3J5IjpbLTc5OTc2Nzg3Ml19
 -->
