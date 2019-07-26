@@ -3,7 +3,7 @@
 ## 1 Overview
 
 ### 1.1 Redis Stream
-XTrade5 uses Redis Stream as communication middleware. Order request and response messages are sent to different 
+XTrade5 uses Redis Stream as communication middleware. Clients and *Hubs*
 
 ### 1.2 Security ID
 
@@ -97,6 +97,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjEzOTEzNjEsLTg4NzgwMzAzNSwyMT
+eyJoaXN0b3J5IjpbLTE1OTQ5NTg0MTksLTg4NzgwMzAzNSwyMT
 cyNzAxOTEsLTEyNTU5NzA1OTBdfQ==
 -->
