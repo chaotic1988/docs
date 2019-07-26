@@ -3,7 +3,7 @@
 ## 1 Overview
 
 ### 1.1 Middleware
-XTrade5 Tra uses Redis as middle ware
+XTrade5 uses Redis as middleware. In particular, request and response messages 
 
 
 
@@ -87,6 +87,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM3MTQwOTUsMjE3MjcwMTkxLC0xMjU1OT
-cwNTkwXX0=
+eyJoaXN0b3J5IjpbMTc3NTMyMjY3LDIxNzI3MDE5MSwtMTI1NT
+k3MDU5MF19
 -->
