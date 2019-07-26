@@ -2,8 +2,8 @@
 
 ## 1 Overview
 
-### 1.1 Middleware
-XTrade5 uses Redis as middleware. In particular, request and response messages 
+### 1.1 Redis Stream
+XTrade5 uses Redis Stream as communication middleware. Order 
 
 
 
@@ -43,7 +43,7 @@ XTrade5 uses Redis as middleware. In particular, request and response messages
 |remaining|Integer|Remaining quantity|
 |filled_value|Float|Filled value|
 |commission|Float|Commission|
-|error|Integer|Error code|
+|error|Integer|Error code (see Section 4.4)|
 
 
 ## 4 Enums
@@ -88,6 +88,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc1Njg3NjY2LC04ODc4MDMwMzUsMjE3Mj
-cwMTkxLC0xMjU1OTcwNTkwXX0=
+eyJoaXN0b3J5IjpbLTM2MTcxMDY3NywtODg3ODAzMDM1LDIxNz
+I3MDE5MSwtMTI1NTk3MDU5MF19
 -->
