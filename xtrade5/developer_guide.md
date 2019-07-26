@@ -109,7 +109,7 @@ enum OrderError {
 
 ## 5 Message Specification
 
-The  message consists of two fields: the message type field `type` and the message payload `data`. The message type field is simply an EventType enum(See Section 4.1). The message payload can be one of the three event types: order entry, order cancel and order updates(See Chapter 3), and are serialized using JSON. For details of message format used in Redis Streams, check out [Introduction to Redis Stream](https://redis.io/topics/streams-intro).
+The  message consists of two fields: the message type field `type` and the message payload `data`. The message type field is simply an EventType enum(See Section 4.1). The message payload can be one of the three event types: order entry, order cancel and order updates(See Chapter 3), and are serialized using JSON. For details of message format used in Redis Stream, check out [Introduction to Redis Stream](https://redis.io/topics/streams-intro).
 
 Examples:
 1. Order entry
@@ -134,5 +134,5 @@ Examples:
 - {"account_id": 0, "strategy_id": 0, "order_id": 5, "sid": 908, "action": 0, "quantity": 1000, "price": 11.43, "update_type": 2, "filled": 300, "remaining": 700, "filled_value": 3429.0, "commission": 0, "error": 0}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NjQ1MDIyNywtNzk5NzY3ODcyXX0=
+eyJoaXN0b3J5IjpbLTU1ODY1NTkzOCwtNzk5NzY3ODcyXX0=
 -->
