@@ -76,12 +76,14 @@ enum OrderAction {
 ```c
 enum OrderError {
 	OK = 0,
-	ERR_INVALID_ = 1,
-	FILL = 2,
-	CANCEL = 3
+	ERR_INVALID_SID = 1,
+	ERR_INVALID_PRICE = 2,
+	ERR_INVALID_QUANTITY = 3,
+	ERR_INSUFFICIENT_QU = 4,
+	ERR_INSUFFICIENT_CASH = 5
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxODcwMDQ2MiwyMTcyNzAxOTEsLTEyNT
+eyJoaXN0b3J5IjpbMTY1Mzg3MTQ2NywyMTcyNzAxOTEsLTEyNT
 U5NzA1OTBdfQ==
 -->
