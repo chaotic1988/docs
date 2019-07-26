@@ -36,7 +36,9 @@
 |quantity|Integer|Quantity|
 |price|Double|Limit price|
 |update_type|Integer|Order Update Type|
-
+|filled|Integer|Filled quantity|
+|remaining|Integer|Remaining quantity|
+|update_type|Integer|Order Update Type|
 
 
 ## 4 Enums
@@ -45,5 +47,6 @@
 |Field|Type|Description|
 |---|---|---|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE3MjcwMTkxLC0xMjU1OTcwNTkwXX0=
+eyJoaXN0b3J5IjpbMjA2OTkzNTQxNiwyMTcyNzAxOTEsLTEyNT
+U5NzA1OTBdfQ==
 -->
