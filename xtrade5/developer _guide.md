@@ -49,10 +49,19 @@
 ```c
 enum EventType {
 	ORDER_ENTRY  = 16,
-	O
+	ORDER_UPDATE = 17,
+	ORDER_CANCEL = 18
+}; 
+```
+
+### 4.2 Order Action
+```c
+enum OrderAction {
+	BUY = 0,
+	SELL = 1
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3Nzk1MTA0MSwyMTcyNzAxOTEsLTEyNT
+eyJoaXN0b3J5IjpbMTcxNjM0MDY2MSwyMTcyNzAxOTEsLTEyNT
 U5NzA1OTBdfQ==
 -->
