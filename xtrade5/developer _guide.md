@@ -3,7 +3,7 @@
 ## 1 Overview
 
 ### 1.1 Redis Stream
-XTrade5 uses Redis Stream as communication middleware. *Clients* and *Hubs* exchanges information through multiple Redis streams which carry different types of information like order requests and order responses. See Chapter 2 for details.
+XTrade5 uses Redis Stream as communication middleware. Clients and Hubs exchanges information through multiple Redis streams which carry different types of information like order requests and order responses. See Chapter 2 for details.
 
 ### 1.2 Security ID
 
@@ -12,7 +12,7 @@ XTrade5 uses Redis Stream as communication middleware. *Clients* and *Hubs* exch
 
 ## 2 Streams
 
-For clients, there are mainly two streams to concern: ``hub_in`` and ``hub_out``. Order requests(entry or cancel) should be sent to ``hub_in``. On the other lients needs to poll ``hub_out``
+For clients, there are mainly two streams to concern: ``hub_in`` and ``hub_out``. Order requests(entry or cancel) should be sent to ``hub_in``. On the other hand, clients needs to poll ``hub_out`` for order responses received from Hubs. Note that clients of different strategy id, 
 
 ## 3 Events
 
@@ -95,6 +95,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMjAxODIxLC04ODc4MDMwMzUsMjE3Mj
-cwMTkxLC0xMjU1OTcwNTkwXX0=
+eyJoaXN0b3J5IjpbLTE2ODI2NTMyMjYsLTg4NzgwMzAzNSwyMT
+cyNzAxOTEsLTEyNTU5NzA1OTBdfQ==
 -->
