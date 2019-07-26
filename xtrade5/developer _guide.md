@@ -12,8 +12,9 @@
 |sid|Integer|Security ID|
 |action|Integer|Buy/Sell|
 |quantity|Integer|Quantity|
-|p|||
+|price|Double|Limit price|
+||||
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MDYwNTEyMF19
+eyJoaXN0b3J5IjpbLTEyNTU5NzA1OTBdfQ==
 -->
