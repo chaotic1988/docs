@@ -46,9 +46,13 @@
 ## 4 Enums
 
 ### 4.1 Event Type
-|Field|Type|Description|
-|---|---|---|
+```c
+enum EventType {
+	ORDER_ENTRY  = 16,
+	O
+}; 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2MDQzNjE1LDIxNzI3MDE5MSwtMTI1NT
-k3MDU5MF19
+eyJoaXN0b3J5IjpbMTE3Nzk1MTA0MSwyMTcyNzAxOTEsLTEyNT
+U5NzA1OTBdfQ==
 -->
