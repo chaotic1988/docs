@@ -54,10 +54,10 @@ For clients, there are mainly two streams under concern: ``hub_in`` and ``hub_ou
 |strategy_id|Integer|Strategy ID|
 |order_id|Integer|Order ID|
 |sid|Integer|Security ID|
-|action|Integer|Order Action (see Section 4.2)|
+|action|Integer|Order action (see Section 4.2)|
 |quantity|Integer|Quantity|
 |price|Float|Limit price|
-|update_type|Integer|Order Update Type (see Section 4.3)|
+|update_type|Integer|Order update type (see Section 4.3)|
 |filled|Integer|Filled quantity|
 |remaining|Integer|Remaining quantity|
 |filled_value|Float|Filled value|
@@ -109,7 +109,7 @@ enum OrderError {
 
 ## 5 Message Specification
 
-The  message consists of two fields: the message type field `type` and the message payload `data`. The message type field is simply an EventType enum(See Section 4.1). The message payload can be one of the three event types: order entry, order cancel and order updates(See Chapter 3), and are serialized using JSON. For details of message format used in Redis Stream, check out [Introduction to Redis Stream](https://redis.io/topics/streams-intro).
+A message consists of two fields: the message type field `type` and the message payload `data`. The message type field is simply an EventType enum(See Section 4.1). The message payload can be one of the three event types: order entry, order cancel and order updates(See Chapter 3), and are serialized using JSON. For details of message format used in Redis Stream, check out [Introduction to Redis Stream](https://redis.io/topics/streams-intro).
 
 Examples:
 1. Order entry
@@ -134,6 +134,6 @@ Examples:
 - {"account_id": 0, "strategy_id": 0, "order_id": 5, "sid": 908, "action": 0, "quantity": 1000, "price": 11.43, "update_type": 2, "filled": 300, "remaining": 700, "filled_value": 3429.0, "commission": 0, "error": 0}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjI2NDkwNTUsMTM0ODQ2NTE1OSwtNT
-U4NjU1OTM4LC03OTk3Njc4NzJdfQ==
+eyJoaXN0b3J5IjpbMTExMzc5MTI4MywtMTMyMjY0OTA1NSwxMz
+Q4NDY1MTU5LC01NTg2NTU5MzgsLTc5OTc2Nzg3Ml19
 -->
