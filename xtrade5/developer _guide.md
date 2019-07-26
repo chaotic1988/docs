@@ -16,8 +16,14 @@
 |action|Integer|Buy/Sell|
 |quantity|Integer|Quantity|
 |price|Double|Limit price|
-||||
+
+### Order Cancellation
+|Field|Type|Description|
+|---|---|---|
+|account_id|Integer|Account ID|
+|strategy_id|Integer|Strategy ID|
+|order_id|Integer|Order ID|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTcyNDc1MiwtMTI1NTk3MDU5MF19
+eyJoaXN0b3J5IjpbMTA4MzE1MzY4LC0xMjU1OTcwNTkwXX0=
 -->
