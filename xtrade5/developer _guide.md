@@ -16,7 +16,7 @@ The advantages of using integer ``sid`` are:
 
 
 ### 1.3 Message
-XTrade5 uses JSON to e
+XTrade5 uses JSON for information exchange between Hubs and Clients. See Chapter 5 for details.
 
 ### 1.4 Order ID
 The (``account_id``, ``strategy_id``, ``order_id``) tuple uniquely identifies an order. Usually, a client will be assigned a fixed ``account_id`` and ``strategy_id``, therefore it only needs to maintain a series of unique ``order_id``'s.
@@ -106,8 +106,12 @@ enum OrderError {
 	ERR_UNKNOWN = 1000
 }; 
 ```
+
+## 5 Message Specification
+
+Order request and res
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyNTc1MDIsLTEzMTg2NTU1NiwtMzI0Mj
-I0ODk4LC04ODc4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcwNTkw
-XX0=
+eyJoaXN0b3J5IjpbMjcyNTU5NDQ2LC0xMzE4NjU1NTYsLTMyND
+IyNDg5OCwtODg3ODAzMDM1LDIxNzI3MDE5MSwtMTI1NTk3MDU5
+MF19
 -->
