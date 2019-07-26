@@ -109,9 +109,9 @@ enum OrderError {
 
 ## 5 Message Specification
 
-Order request and res
+A message consists of two fields: the message type field and the
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcyNTU5NDQ2LC0xMzE4NjU1NTYsLTMyND
-IyNDg5OCwtODg3ODAzMDM1LDIxNzI3MDE5MSwtMTI1NTk3MDU5
-MF19
+eyJoaXN0b3J5IjpbLTIyMjM1NTQ2NCwtMTMxODY1NTU2LC0zMj
+QyMjQ4OTgsLTg4NzgwMzAzNSwyMTcyNzAxOTEsLTEyNTU5NzA1
+OTBdfQ==
 -->
