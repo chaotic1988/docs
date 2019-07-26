@@ -1,4 +1,4 @@
-# Developer Guide
+# XTrade5 Developer Guide
 
 ## 1 Overview
 
@@ -6,6 +6,7 @@
 XTrade5 uses *Redis Stream* as communication middleware. Unlike common fire-and-forget queues, Redis streams persist messages, which enables multiple downstream readers to process the messages at the same time. XTrade5 Clients and Hubs exchanges information through multiple Redis streams which carry different types of information like order requests and order responses. See Chapter 2 for details.
 
 ### 1.2 Security ID
+Internally, XTrade5 uses intergers to identify securities, instead of
 
 ### 1.3
 
@@ -95,6 +96,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3OTMwNDMwMCwtODg3ODAzMDM1LDIxNz
-I3MDE5MSwtMTI1NTk3MDU5MF19
+eyJoaXN0b3J5IjpbNzQ1ODE4NDM1LC04ODc4MDMwMzUsMjE3Mj
+cwMTkxLC0xMjU1OTcwNTkwXX0=
 -->
