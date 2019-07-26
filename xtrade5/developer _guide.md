@@ -61,7 +61,27 @@ enum OrderAction {
 	SELL = 1
 }; 
 ```
+
+### 4.2 Order Update Type
+```c
+enum OrderAction {
+	ACCEPT = 0,
+	REJECT = 1,
+	FILL = 2,
+	CANCEL = 3
+}; 
+```
+
+### 4.2 Error Code
+```c
+enum OrderError {
+	OK = 0,
+	ERR_INVALID_ = 1,
+	FILL = 2,
+	CANCEL = 3
+}; 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNjM0MDY2MSwyMTcyNzAxOTEsLTEyNT
+eyJoaXN0b3J5IjpbMTgxODcwMDQ2MiwyMTcyNzAxOTEsLTEyNT
 U5NzA1OTBdfQ==
 -->
