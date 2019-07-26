@@ -1,12 +1,13 @@
 # Developer Guide
 
-## Introduction
+## 1 Overview
 
 
-## Events
+
+## 3 Events
 
 
-### Order Entry
+### 3.2 Order Entry
 |Field|Type|Description|
 |---|---|---|
 |account_id|Integer|Account ID|
@@ -17,14 +18,14 @@
 |quantity|Integer|Quantity|
 |price|Double|Limit price|
 
-### Order Cancellation
+### 3.3 Order Cancel
 |Field|Type|Description|
 |---|---|---|
 |account_id|Integer|Account ID|
 |strategy_id|Integer|Strategy ID|
 |order_id|Integer|Order ID|
 
-### Order Update
+### 3.4 Order Update
 |Field|Type|Description|
 |---|---|---|
 |account_id|Integer|Account ID|
@@ -38,7 +39,9 @@
 
 
 
-###
+## 4 Enums
+
+### 4.1 Event 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4Mjc1MTAwNywtMTI1NTk3MDU5MF19
+eyJoaXN0b3J5IjpbNTIzNTYyOTQyLC0xMjU1OTcwNTkwXX0=
 -->
