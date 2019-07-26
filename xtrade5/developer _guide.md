@@ -117,10 +117,24 @@ Examples:
 - type
 - 16
 - data
-- {"account_id": 0, "strategy_id": 0, "order_id": 5, "sid": 908, "action": 0, quantity}
+- {"account_id": 0, "strategy_id": 0, "order_id": 5, "sid": 908, "action": 0, "quantity": 1000, "price": 11.43}
+```
+2. Order cancel
+```
+- type
+- 16
+- data
+- {"account_id": 0, "strategy_id": 0, "order_id": 5}
+```
+3. Order update
+```
+- type
+- 16
+- data
+- {"account_id": 0, "strategy_id": 0, "order_id": 5, "sid": 908, "action": 0, "quantity": 1000, "price": 11.43}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzY5NzYzNjcsLTEzMTg2NTU1NiwtMz
-I0MjI0ODk4LC04ODc4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcw
-NTkwXX0=
+eyJoaXN0b3J5IjpbMzAzMzc2NTQzLC0xMzE4NjU1NTYsLTMyND
+IyNDg5OCwtODg3ODAzMDM1LDIxNzI3MDE5MSwtMTI1NTk3MDU5
+MF19
 -->
