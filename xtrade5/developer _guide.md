@@ -16,7 +16,7 @@ The (``account_id``, ``strategy_id``, ``order_id``) tuple uniquely identifies an
 
 ## 2 Streams
 
-For clients, there are mainly two streams to concern: ``hub_in`` and ``hub_out``. Order requests(entry or cancel) should be sent to ``hub_in``. On the other hand, clients needs to poll ``hub_out`` for order responses received from Hubs. Note that clients of different strategy ids share the same ``hub_out``, 
+For clients, there are mainly two streams to concern: ``hub_in`` and ``hub_out``. Order requests(order entry or cancel) should be sent to ``hub_in``. On the other hand, clients needs to poll ``hub_out`` for order responses(order updates) received from Hubs. Note that clients of different strategy ids share the same ``hub_out``, therefore, a normal client should filter 
 
 ## 3 Events
 
@@ -99,6 +99,6 @@ enum OrderError {
 }; 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDQyNTA5OCwtMzI0MjI0ODk4LC04OD
-c4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcwNTkwXX0=
+eyJoaXN0b3J5IjpbNjcyMDUzNzAxLC0zMjQyMjQ4OTgsLTg4Nz
+gwMzAzNSwyMTcyNzAxOTEsLTEyNTU5NzA1OTBdfQ==
 -->
