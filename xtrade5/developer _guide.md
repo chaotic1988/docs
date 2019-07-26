@@ -109,7 +109,7 @@ enum OrderError {
 
 ## 5 Message Specification
 
-A message consists of two fields: the message type field and the payload.
+A message consists of two fields: the message type field and the payload. The message type field is simply of an
 
 Examples:
 1. Order entry
@@ -117,10 +117,10 @@ Examples:
 - type
 - 16
 - data
-- {"sid":}
+- {"", "sid":}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzNTUxOTgzLC0xMzE4NjU1NTYsLTMyND
-IyNDg5OCwtODg3ODAzMDM1LDIxNzI3MDE5MSwtMTI1NTk3MDU5
-MF19
+eyJoaXN0b3J5IjpbMTc0MjQyMDU0NSwtMTMxODY1NTU2LC0zMj
+QyMjQ4OTgsLTg4NzgwMzAzNSwyMTcyNzAxOTEsLTEyNTU5NzA1
+OTBdfQ==
 -->
