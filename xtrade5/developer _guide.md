@@ -114,10 +114,10 @@ A message consists of two fields: the message type field and the payload.
 Examples:
 1. Order entry
 ```json
-{"type": 16, data: ""}
+{"type": 16, data: {"account_id": 1, "strategy_id": 2, "sid":}}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTgwMDM3ODUsLTEzMTg2NTU1NiwtMz
-I0MjI0ODk4LC04ODc4MDMwMzUsMjE3MjcwMTkxLC0xMjU1OTcw
-NTkwXX0=
+eyJoaXN0b3J5IjpbMTMyMzU1ODUzMCwtMTMxODY1NTU2LC0zMj
+QyMjQ4OTgsLTg4NzgwMzAzNSwyMTcyNzAxOTEsLTEyNTU5NzA1
+OTBdfQ==
 -->
