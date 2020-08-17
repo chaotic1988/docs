@@ -79,8 +79,12 @@ enum EventType {
 ### 4.2 Order Action
 ```c
 enum OrderAction {
-	BUY = 0,
-	SELL = 1
+	BUY = 0,  // 普通买入
+	SELL = 1,  // 普通卖出
+	BUY_COVER = 2,  // 买券还券
+    	SHORT_SELL = 3,  // 融券卖出
+    	MARGIN_BUY = 4,  // 融资买入
+    	SELL_REPAY = 5,  // 卖券还款
 }; 
 ```
 
